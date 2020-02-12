@@ -10,7 +10,13 @@ class SearchPage extends StatelessWidget {
 //      ),
       body: Center(
         child: Text('搜索页'),
-      )
+      ),
+      floatingActionButton: FloatingActionButton(
+        child:Text('返回'),
+        onPressed: (){
+          Navigator.of(context).pop();
+        },
+      ),
     );
   }
 }
