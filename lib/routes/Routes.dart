@@ -4,6 +4,11 @@ import 'package:first_flutter_app/appbar/MyAppBar.dart';
 import 'package:first_flutter_app/appbar/MyTabBar.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
 import 'package:flutter/material.dart';
+import 'package:first_flutter_app/appbar/MyTabBarCtrlPage.dart';
+import 'package:first_flutter_app/drawer/MyDrawer.dart';
+import 'package:first_flutter_app/button/MyButton.dart';
+import 'package:first_flutter_app/text/MyTextFiled.dart';
+
 
 class MyRoute {
 
@@ -12,6 +17,10 @@ class MyRoute {
   static const String SETTING = '/setting';
   static const String APPBAR = '/appbar';
   static const String TABBAR = '/tabbar';
+  static const String TABBAR_CTRL = '/tabbarCtrl';
+  static const String DRAWER = '/drawer';
+  static const String BUTTON = '/button';
+  static const String TEXT = '/text';
 }
 
 final _routes = {
@@ -20,6 +29,10 @@ final _routes = {
   MyRoute.SETTING:(context,{arguments}) => SettingPage(arguments: arguments),
   MyRoute.APPBAR:(context) => MyAppbar(),
   MyRoute.TABBAR:(context) => MyTabBar(),
+  MyRoute.TABBAR_CTRL:(context) => MyTabBarCtrlPage(),
+  MyRoute.DRAWER:(context) => MyDrawer(),
+  MyRoute.BUTTON:(context) => MyButton(),
+  MyRoute.TEXT:(context) => MyTextFiled(),
 };
 
 

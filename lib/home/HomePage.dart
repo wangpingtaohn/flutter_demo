@@ -60,6 +60,62 @@ class _HomePageState extends State<HomePage>{
 //            );
           },
         ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("导航栏页Ctrl"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.TABBAR_CTRL);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("drawer"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.DRAWER);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("button"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.BUTTON);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("textField"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.TEXT);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
       ],
     );
   }

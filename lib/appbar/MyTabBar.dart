@@ -4,8 +4,7 @@ class MyTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home:DefaultTabController(
+    return DefaultTabController(
         length: 2,
         child: Scaffold(
           appBar: AppBar(
@@ -14,6 +13,10 @@ class MyTabBar extends StatelessWidget {
                 Tab(text: '热门',),
                 Tab(text: '推荐',),
               ],
+              indicatorColor: Colors.yellow,
+              labelColor: Colors.yellow,
+              unselectedLabelColor: Colors.white,
+              indicatorSize: TabBarIndicatorSize.label,
             ),
             title: Text('myAppbar'),
             centerTitle: true,//标题是否居中
@@ -30,11 +33,13 @@ class MyTabBar extends StatelessWidget {
               Icon(Icons.departure_board)
             ],
           ),
-          body: Center(
-            child: Text('内容'),
+          body: TabBarView(
+            children: <Widget>[
+              Text('热门内容'),
+              Text('推荐内容')
+            ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
