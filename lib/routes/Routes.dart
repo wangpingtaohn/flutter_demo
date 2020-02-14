@@ -9,6 +9,7 @@ import 'package:first_flutter_app/drawer/MyDrawer.dart';
 import 'package:first_flutter_app/button/MyButton.dart';
 import 'package:first_flutter_app/text/MyTextFiled.dart';
 import 'package:first_flutter_app/date/MyDatePick.dart';
+import 'package:first_flutter_app/swiper/MySwiper.dart';
 
 
 class MyRoute {
@@ -23,6 +24,7 @@ class MyRoute {
   static const String BUTTON = '/button';
   static const String TEXT = '/text';
   static const String DATE_PICK = '/datePick';
+  static const String SWIPER = '/swiper';
 }
 
 final _routes = {
@@ -36,6 +38,7 @@ final _routes = {
   MyRoute.BUTTON:(context) => MyButton(),
   MyRoute.TEXT:(context) => MyTextFiled(),
   MyRoute.DATE_PICK:(context) => MyDatePick(),
+  MyRoute.SWIPER:(context) => MySwiper(),
 };
 
 
