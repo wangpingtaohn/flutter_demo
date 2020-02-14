@@ -8,6 +8,7 @@ import 'package:first_flutter_app/appbar/MyTabBarCtrlPage.dart';
 import 'package:first_flutter_app/drawer/MyDrawer.dart';
 import 'package:first_flutter_app/button/MyButton.dart';
 import 'package:first_flutter_app/text/MyTextFiled.dart';
+import 'package:first_flutter_app/date/MyDatePick.dart';
 
 
 class MyRoute {
@@ -21,6 +22,7 @@ class MyRoute {
   static const String DRAWER = '/drawer';
   static const String BUTTON = '/button';
   static const String TEXT = '/text';
+  static const String DATE_PICK = '/datePick';
 }
 
 final _routes = {
@@ -33,6 +35,7 @@ final _routes = {
   MyRoute.DRAWER:(context) => MyDrawer(),
   MyRoute.BUTTON:(context) => MyButton(),
   MyRoute.TEXT:(context) => MyTextFiled(),
+  MyRoute.DATE_PICK:(context) => MyDatePick(),
 };
 
 

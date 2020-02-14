@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MyStatefulWidget.dart';
 import 'routes/Routes.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,12 +10,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //配置本地化
+      localizationsDelegates: [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: [
+        const Locale('zh', 'CH'),
+        const Locale('en', 'US')
+      ],
 //      home: MyTab(),
-    debugShowCheckedModeBanner: false,//右上角不显示debug图标
-      initialRoute: MyRoute.TABS,//查找routes里的name
-      theme: ThemeData(primarySwatch: Colors.red),//主题颜色
+      debugShowCheckedModeBanner: false,
+      //右上角不显示debug图标
+      initialRoute: MyRoute.TABS,
+      //查找routes里的name
+      theme: ThemeData(primarySwatch: Colors.red),
+      //主题颜色
 //      routes: routes,
-    onGenerateRoute: onGenerateRoute,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }

@@ -116,6 +116,17 @@ class _HomePageState extends State<HomePage>{
 //            );
           },
         ),
+        RaisedButton(
+          child: Text("日期组件"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.DATE_PICK);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
       ],
     );
   }
