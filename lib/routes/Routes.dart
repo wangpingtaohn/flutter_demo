@@ -10,6 +10,12 @@ import 'package:first_flutter_app/button/MyButton.dart';
 import 'package:first_flutter_app/text/MyTextFiled.dart';
 import 'package:first_flutter_app/date/MyDatePick.dart';
 import 'package:first_flutter_app/swiper/MySwiper.dart';
+import 'package:first_flutter_app/dialog/MyAlertDialog.dart';
+import 'package:first_flutter_app/dialog/MySimpleDialog.dart';
+import 'package:first_flutter_app/dialog/MyBottomSheet.dart';
+import 'package:first_flutter_app/dialog/MyToast.dart';
+import 'package:first_flutter_app/dialog/MyCustomDialog.dart';
+import 'package:first_flutter_app/net/MyNetworkPage.dart';
 
 
 class MyRoute {
@@ -25,6 +31,12 @@ class MyRoute {
   static const String TEXT = '/text';
   static const String DATE_PICK = '/datePick';
   static const String SWIPER = '/swiper';
+  static const String ALERT = '/alert';
+  static const String SIMPLE = '/simple';
+  static const String BOTTOM_SHEET = '/bottomSheet';
+  static const String TOAST = '/toast';
+  static const String CUSTOM_DIALOG = '/customDialog';
+  static const String NETWORK = '/network';
 }
 
 final _routes = {
@@ -39,6 +51,12 @@ final _routes = {
   MyRoute.TEXT:(context) => MyTextFiled(),
   MyRoute.DATE_PICK:(context) => MyDatePick(),
   MyRoute.SWIPER:(context) => MySwiper(),
+  MyRoute.ALERT:(context) => MyAlertDialog(),
+  MyRoute.SIMPLE:(context) => MySimpleDialog(),
+  MyRoute.BOTTOM_SHEET:(context) => MyBottomSheetDialog(),
+  MyRoute.TOAST:(context) => MyToast(),
+  MyRoute.CUSTOM_DIALOG:(context) => MyCustomDialog(),
+  MyRoute.NETWORK:(context) => MyNetWorkPage(),
 };
 
 
