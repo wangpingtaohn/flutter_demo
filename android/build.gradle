@@ -24,12 +24,12 @@ allprojects {
     }
 }
 
-rootProject.buildDir = '../build'
+rootProject.buildDir = '../build' ////根工程输出路径
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
 subprojects {
-    project.evaluationDependsOn(':app')
+    project.evaluationDependsOn(':app') //为所有子工程配置app的依赖
 }
 
 task clean(type: Delete) {

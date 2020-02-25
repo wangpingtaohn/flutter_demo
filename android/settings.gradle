@@ -1,5 +1,7 @@
 include ':app'
 
+//如果你有配置Flutter工程根目录下.flutter-plugins这个文件，那么下面的操作就会把flutter插件用到的第三方工程include到当前的工程中，并为其配置工程的路径 projectDir：
+
 def flutterProjectRoot = rootProject.projectDir.parentFile.toPath()
 
 def plugins = new Properties()
