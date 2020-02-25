@@ -228,6 +228,20 @@ class _HomePageState extends State<HomePage>{
 //            );
           },
         ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("动画"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.ANIMATION);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
       ],
     );
   }

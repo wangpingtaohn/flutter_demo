@@ -1,5 +1,8 @@
 import 'package:first_flutter_app/MyTab.dart';
 import 'package:first_flutter_app/Setting/SettingPage.dart';
+import 'package:first_flutter_app/animation/MyAnimation.dart';
+import 'package:first_flutter_app/animation/MyTween.dart';
+import 'package:first_flutter_app/animation/MyAnimatedWidget.dart';
 import 'package:first_flutter_app/appbar/MyAppBar.dart';
 import 'package:first_flutter_app/appbar/MyTabBar.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
@@ -37,6 +40,9 @@ class MyRoute {
   static const String TOAST = '/toast';
   static const String CUSTOM_DIALOG = '/customDialog';
   static const String NETWORK = '/network';
+  static const String ANIMATION = '/animation';
+  static const String TWEEN = '/tween';
+  static const String ANIMATED = '/animated';
 }
 
 final _routes = {
@@ -57,6 +63,9 @@ final _routes = {
   MyRoute.TOAST:(context) => MyToast(),
   MyRoute.CUSTOM_DIALOG:(context) => MyCustomDialog(),
   MyRoute.NETWORK:(context) => MyNetWorkPage(),
+  MyRoute.ANIMATION:(context) => MyAnimation(),
+  MyRoute.TWEEN:(context) => MyTween(),
+  MyRoute.ANIMATED:(context) => MyAnimatedLogo(),
 };
 
 
