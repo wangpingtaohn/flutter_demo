@@ -8,6 +8,7 @@ import 'package:first_flutter_app/animation/MyTween.dart';
 import 'package:first_flutter_app/animation/MyAnimatedWidget.dart';
 import 'package:first_flutter_app/appbar/MyAppBar.dart';
 import 'package:first_flutter_app/appbar/MyTabBar.dart';
+import 'package:first_flutter_app/button/buttonDescPage.dart';
 import 'package:first_flutter_app/button/buttonDetailPage.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
 import 'package:flutter/material.dart';
@@ -51,6 +52,7 @@ class MyRoute {
   static const String CARD = '/card';
   static const String ROTATIONTRANSITION = '/rotationTransition';
   static const String BUTTON_DETAIL = '/buttonDetail';
+  static const String BUTTON_DESC = '/buttonDesc';
 }
 
 final routes = {
@@ -78,6 +80,7 @@ final routes = {
   MyRoute.CARD:(context) => MyCard(),
   MyRoute.ROTATIONTRANSITION:(context) => MyRotationTransition(),
   MyRoute.BUTTON_DETAIL:(context) => ButtonDetailPage(),
+  MyRoute.BUTTON_DESC:(context) => ButtonDescPage(),
 };
 
 

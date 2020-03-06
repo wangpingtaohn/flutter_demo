@@ -9,22 +9,21 @@ import '../MyTab.dart';
  *    date   : 2020-03-06 11:16
  *    desc   :
  */
-class ButtonDetailPage extends StatelessWidget {
+class ButtonDescPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
         color: Colors.white,
         child: RaisedButton(
-          child: Text('detail'),
+          child: Text('decs'),
           onPressed: (){
 //            Navigator.of(context).popUntil(ModalRoute.withName(MyRoute.TABS));
 //            Navigator.of(context).pushAndRemoveUntil(
 //                new MaterialPageRoute(builder: (context) => new MyTextFiled()),
 //                    (route) => route == null
 //            );
-//          Navigator.of(context).popUntil(ModalRoute.withName(MyRoute.TABS));
-          Navigator.pushNamed(context, MyRoute.BUTTON_DESC);
+          Navigator.of(context).popUntil(ModalRoute.withName(MyRoute.BUTTON));
           },
         ),
       )
