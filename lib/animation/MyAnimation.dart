@@ -32,6 +32,12 @@ class _MyAnimationState  extends State<MyAnimation>{
               Navigator.pushNamed(context, MyRoute.ANIMATED);
             },
           ),
+          RaisedButton(
+            child: Text('RotationTransition'),
+            onPressed: (){
+              Navigator.pushNamed(context, MyRoute.ROTATIONTRANSITION);
+            },
+          ),
         ],
       ),
     );

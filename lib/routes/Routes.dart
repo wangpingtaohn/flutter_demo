@@ -1,10 +1,14 @@
+import 'package:first_flutter_app/MyCard.dart';
+import 'package:first_flutter_app/MyStack.dart';
 import 'package:first_flutter_app/MyTab.dart';
 import 'package:first_flutter_app/Setting/SettingPage.dart';
 import 'package:first_flutter_app/animation/MyAnimation.dart';
+import 'package:first_flutter_app/animation/MyRotationTransition.dart';
 import 'package:first_flutter_app/animation/MyTween.dart';
 import 'package:first_flutter_app/animation/MyAnimatedWidget.dart';
 import 'package:first_flutter_app/appbar/MyAppBar.dart';
 import 'package:first_flutter_app/appbar/MyTabBar.dart';
+import 'package:first_flutter_app/button/buttonDetailPage.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/appbar/MyTabBarCtrlPage.dart';
@@ -43,9 +47,13 @@ class MyRoute {
   static const String ANIMATION = '/animation';
   static const String TWEEN = '/tween';
   static const String ANIMATED = '/animated';
+  static const String STACK = '/stack';
+  static const String CARD = '/card';
+  static const String ROTATIONTRANSITION = '/rotationTransition';
+  static const String BUTTON_DETAIL = '/buttonDetail';
 }
 
-final _routes = {
+final routes = {
   MyRoute.TABS:(context) => MyTab(),
   MyRoute.SEARCH:(context,{arguments}) => SearchPage(arguments: arguments,),
   MyRoute.SETTING:(context,{arguments}) => SettingPage(arguments: arguments),
@@ -66,12 +74,16 @@ final _routes = {
   MyRoute.ANIMATION:(context) => MyAnimation(),
   MyRoute.TWEEN:(context) => MyTween(),
   MyRoute.ANIMATED:(context) => MyAnimatedLogo(),
+  MyRoute.STACK:(context) => MyStack(),
+  MyRoute.CARD:(context) => MyCard(),
+  MyRoute.ROTATIONTRANSITION:(context) => MyRotationTransition(),
+  MyRoute.BUTTON_DETAIL:(context) => ButtonDetailPage(),
 };
 
 
 Route onGenerateRoute(RouteSettings settings) {
   final String name = settings.name;
-  final Function pageBuilder = _routes[name];
+  final Function pageBuilder = routes[name];
   if (pageBuilder != null) {
     if (settings.arguments != null) {
       // 如果透传了参数

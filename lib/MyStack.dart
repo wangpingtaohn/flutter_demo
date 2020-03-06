@@ -12,9 +12,9 @@ class MyStack extends StatelessWidget {
       child: new Stack(
         children: <Widget>[
           Align( //相对位置
-            alignment: Alignment(0,0.5),//(0.0)为中心
-            child: Icon(Icons.home,size:60,color: Colors.red),
-          ),
+              alignment: Alignment(0,0.5),//(0.0)为中心
+              child: Icon(Icons.home,size:60,color: Colors.red),
+            ),
           Align(
             alignment: Alignment.bottomLeft,
             child: Icon(Icons.save,size:60,color: Colors.yellow),

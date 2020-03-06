@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       //查找routes里的name
       theme: ThemeData(primarySwatch: Colors.red),
       //主题颜色
-//      routes: routes,
+      routes: routes,
       onGenerateRoute: onGenerateRoute,
     );
   }

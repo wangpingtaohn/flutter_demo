@@ -50,6 +50,9 @@ flutter:
     - images/bg.png
     - images/2.0x/bg.png
     - images/3.0x/bg.png
+    - images/loading.png
+    - images/2.0x/loading.png
+    - images/3.0x/loading.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

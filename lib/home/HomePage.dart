@@ -22,6 +22,34 @@ class _HomePageState extends State<HomePage>{
           height: 10,
         ),
         RaisedButton(
+          child: Text("Card"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.CARD);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("Stack"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.STACK);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
           child: Text("去搜索"),
           onPressed: (){
             Navigator.pushNamed(context, MyRoute.SEARCH);
