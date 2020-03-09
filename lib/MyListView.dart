@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/common/fancToast.dart';
 import 'package:flutter/material.dart';
 
 
@@ -18,13 +19,32 @@ class MyListView extends StatelessWidget {
 //      scrollDirection: Axis.vertical,
 //      children: _getStaticData(),
 //    );
-  return ListView.builder(
-    itemCount: this.list.length,
-    itemBuilder: (context,index){
-      return ListTile(
-        title: Text(this.list[index]),
-      );
-    }
+  return Scaffold(
+    body: Stack(
+      children: <Widget>[
+        ListView.builder(
+            itemCount: this.list.length,
+            itemBuilder: (context,index){
+              return RaisedButton(
+                child: Text(this.list[index]),
+                onPressed: (){
+                  FancToast.showToast('列表$index');
+                },
+              );
+            }
+        ),
+        Align(
+          alignment: Alignment(0,1),
+          child: RaisedButton(
+            child: Text('固定底部'),
+            onPressed: (){
+              FancToast.showToast('底部');
+            },
+          ),
+        ),
+
+      ],
+    )
   );
   }
 }

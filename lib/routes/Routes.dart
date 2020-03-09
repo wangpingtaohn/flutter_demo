@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/MyCard.dart';
+import 'package:first_flutter_app/MyListView.dart';
 import 'package:first_flutter_app/MyStack.dart';
 import 'package:first_flutter_app/MyTab.dart';
 import 'package:first_flutter_app/Setting/SettingPage.dart';
@@ -53,6 +54,7 @@ class MyRoute {
   static const String ROTATIONTRANSITION = '/rotationTransition';
   static const String BUTTON_DETAIL = '/buttonDetail';
   static const String BUTTON_DESC = '/buttonDesc';
+  static const String LISTVIEW = '/listview';
 }
 
 final routes = {
@@ -81,6 +83,7 @@ final routes = {
   MyRoute.ROTATIONTRANSITION:(context) => MyRotationTransition(),
   MyRoute.BUTTON_DETAIL:(context) => ButtonDetailPage(),
   MyRoute.BUTTON_DESC:(context) => ButtonDescPage(),
+  MyRoute.LISTVIEW:(context) => MyListView(),
 };
 
 
