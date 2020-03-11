@@ -22,6 +22,20 @@ class _HomePageState extends State<HomePage>{
           height: 10,
         ),
         RaisedButton(
+          child: Text("生命周期"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.LIFECYCLE);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
           child: Text("listView"),
           onPressed: (){
             Navigator.pushNamed(context, MyRoute.LISTVIEW);

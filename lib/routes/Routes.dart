@@ -11,6 +11,7 @@ import 'package:first_flutter_app/appbar/MyAppBar.dart';
 import 'package:first_flutter_app/appbar/MyTabBar.dart';
 import 'package:first_flutter_app/button/buttonDescPage.dart';
 import 'package:first_flutter_app/button/buttonDetailPage.dart';
+import 'package:first_flutter_app/lifecycle/myLifeCyclePage.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/appbar/MyTabBarCtrlPage.dart';
@@ -55,6 +56,7 @@ class MyRoute {
   static const String BUTTON_DETAIL = '/buttonDetail';
   static const String BUTTON_DESC = '/buttonDesc';
   static const String LISTVIEW = '/listview';
+  static const String LIFECYCLE = '/lifeCycle';
 }
 
 final routes = {
@@ -84,6 +86,7 @@ final routes = {
   MyRoute.BUTTON_DETAIL:(context) => ButtonDetailPage(),
   MyRoute.BUTTON_DESC:(context) => ButtonDescPage(),
   MyRoute.LISTVIEW:(context) => MyListView(),
+  MyRoute.LIFECYCLE:(context) => MyLifeCyclePage(),
 };
 
 
