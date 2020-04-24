@@ -9,25 +9,25 @@ class MyColumn extends StatelessWidget {
       width: 300,
       color: Colors.red,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,//主轴(垂直)排列方式
+        mainAxisAlignment: MainAxisAlignment.start,//主轴(垂直)排列方式
         children: <Widget>[
           Image.network(
-            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581422031471&di=df2254ecbc97fc0cae3396a670511021&imgtype=0&src=http%3A%2F%2Fimg2018.cnblogs.com%2Fblog%2F1762823%2F201911%2F1762823-20191104112732371-1699453123.jpg',
+            'http://staticcdntest.fantuan.cn/uimage/9b/50/07/75/9b5007750a9761115376e22b2b296812.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,Q_70/interlace,1/format,jpg',
             fit: BoxFit.cover,
             width: 50,
             height: 50,),
           Image.network(
-            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581422031471&di=df2254ecbc97fc0cae3396a670511021&imgtype=0&src=http%3A%2F%2Fimg2018.cnblogs.com%2Fblog%2F1762823%2F201911%2F1762823-20191104112732371-1699453123.jpg',
+            'http://staticcdntest.fantuan.cn/uimage/9b/50/07/75/9b5007750a9761115376e22b2b296812.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,Q_70/interlace,1/format,jpg',
             fit: BoxFit.cover,
             width: 50,
             height: 50,),
           Image.network(
-            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581422031471&di=df2254ecbc97fc0cae3396a670511021&imgtype=0&src=http%3A%2F%2Fimg2018.cnblogs.com%2Fblog%2F1762823%2F201911%2F1762823-20191104112732371-1699453123.jpg',
+            'http://staticcdntest.fantuan.cn/uimage/9b/50/07/75/9b5007750a9761115376e22b2b296812.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,Q_70/interlace,1/format,jpg',
             fit: BoxFit.cover,
             width: 50,
             height: 50,),
           Image.network(
-            'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1581422031471&di=df2254ecbc97fc0cae3396a670511021&imgtype=0&src=http%3A%2F%2Fimg2018.cnblogs.com%2Fblog%2F1762823%2F201911%2F1762823-20191104112732371-1699453123.jpg',
+            'http://staticcdntest.fantuan.cn/uimage/9b/50/07/75/9b5007750a9761115376e22b2b296812.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600/quality,Q_70/interlace,1/format,jpg',
             fit: BoxFit.cover,
             width: 50,
             height: 50,)

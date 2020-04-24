@@ -22,6 +22,160 @@ class _HomePageState extends State<HomePage>{
           height: 10,
         ),
         RaisedButton(
+          child: Text("联动ListView"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.ROW_LISTVIEW);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("wrap"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_WRAP);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("expanded"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_EXPANDED);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("listView"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.LISTVIEW);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("gridview"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_GRIDVIEW);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("myColumn"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_COLUMN);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("aspectRadio"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.ASPECT_RADIO);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("localImage"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.LOCAL_IMAGE);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("ImageFile"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.IMAGE_FILE);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("listView Item"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_ITEM);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
+          child: Text("Wrap控件"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_WRAP);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
           child: Text("生命周期"),
           onPressed: (){
             Navigator.pushNamed(context, MyRoute.LIFECYCLE);

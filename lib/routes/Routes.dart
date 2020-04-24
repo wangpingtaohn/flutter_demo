@@ -1,5 +1,6 @@
+import 'package:first_flutter_app/ImageFile.dart';
 import 'package:first_flutter_app/MyCard.dart';
-import 'package:first_flutter_app/MyListView.dart';
+import 'package:first_flutter_app/listview/MyListView.dart';
 import 'package:first_flutter_app/MyStack.dart';
 import 'package:first_flutter_app/MyTab.dart';
 import 'package:first_flutter_app/Setting/SettingPage.dart';
@@ -12,7 +13,9 @@ import 'package:first_flutter_app/appbar/MyTabBar.dart';
 import 'package:first_flutter_app/button/buttonDescPage.dart';
 import 'package:first_flutter_app/button/buttonDetailPage.dart';
 import 'package:first_flutter_app/lifecycle/myLifeCyclePage.dart';
+import 'package:first_flutter_app/listview/RowListView.dart';
 import 'package:first_flutter_app/search/SearchPage.dart';
+import 'package:first_flutter_app/text/ListViewItem.dart';
 import 'package:flutter/material.dart';
 import 'package:first_flutter_app/appbar/MyTabBarCtrlPage.dart';
 import 'package:first_flutter_app/drawer/MyDrawer.dart';
@@ -26,6 +29,13 @@ import 'package:first_flutter_app/dialog/MyBottomSheet.dart';
 import 'package:first_flutter_app/dialog/MyToast.dart';
 import 'package:first_flutter_app/dialog/MyCustomDialog.dart';
 import 'package:first_flutter_app/net/MyNetworkPage.dart';
+
+import '../LocalImage.dart';
+import '../MyAspectRadio.dart';
+import '../MyColumn.dart';
+import '../gridview/MyExpanded.dart';
+import '../MyLGridView.dart';
+import '../MyWrap.dart';
 
 
 class MyRoute {
@@ -57,10 +67,21 @@ class MyRoute {
   static const String BUTTON_DESC = '/buttonDesc';
   static const String LISTVIEW = '/listview';
   static const String LIFECYCLE = '/lifeCycle';
+  static const String MY_WRAP = '/myWrap';
+  static const String MY_ITEM = '/myItem';
+  static const String IMAGE_FILE = '/imageFile';
+  static const String LOCAL_IMAGE = '/loadImage';
+  static const String ASPECT_RADIO = '/aspectRadio';
+  static const String MY_COLUMN = '/MyColumn';
+  static const String MY_EXPANDED = '/MyExpanded';
+  static const String MY_GRIDVIEW = '/MyGridView';
+  static const String ROW_LISTVIEW = '/rowListView';
 }
 
 final routes = {
   MyRoute.TABS:(context) => MyTab(),
+  MyRoute.MY_ITEM:(context) => MyListViewItem(),
+  MyRoute.MY_WRAP:(context) => MyWrap(),
   MyRoute.SEARCH:(context,{arguments}) => SearchPage(arguments: arguments,),
   MyRoute.SETTING:(context,{arguments}) => SettingPage(arguments: arguments),
   MyRoute.APPBAR:(context) => MyAppbar(),
@@ -87,6 +108,13 @@ final routes = {
   MyRoute.BUTTON_DESC:(context) => ButtonDescPage(),
   MyRoute.LISTVIEW:(context) => MyListView(),
   MyRoute.LIFECYCLE:(context) => MyLifeCyclePage(),
+  MyRoute.IMAGE_FILE:(context) => MyImageFilePage(),
+  MyRoute.LOCAL_IMAGE:(context) => LocalImage(),
+  MyRoute.ASPECT_RADIO:(context) => MyAspectRadio(),
+  MyRoute.MY_COLUMN:(context) => MyColumn(),
+  MyRoute.MY_EXPANDED:(context) => MyExpanded(),
+  MyRoute.MY_GRIDVIEW:(context) => MyGridView(),
+  MyRoute.ROW_LISTVIEW:(context) => RowListView(),
 };
 
 
