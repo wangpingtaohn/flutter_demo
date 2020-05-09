@@ -22,6 +22,20 @@ class _HomePageState extends State<HomePage>{
           height: 10,
         ),
         RaisedButton(
+          child: Text("myScrollable"),
+          onPressed: (){
+            Navigator.pushNamed(context, MyRoute.MY_SCROLLABLE);
+//            Navigator.of(context).push(
+//              MaterialPageRoute(
+//                builder: (context) => SearchPage()//目标页
+//              )
+//            );
+          },
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        RaisedButton(
           child: Text("联动ListView"),
           onPressed: (){
             Navigator.pushNamed(context, MyRoute.ROW_LISTVIEW);
