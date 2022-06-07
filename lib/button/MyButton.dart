@@ -53,7 +53,7 @@ class MyButton extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
-            OutlineButton(
+            OutlinedButton(
               child: Text('OutlineButton'),
               onPressed: (){},
             ),

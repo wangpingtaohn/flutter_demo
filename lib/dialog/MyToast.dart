@@ -26,7 +26,7 @@ class _MyToastState extends State<MyToast>{
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.CENTER,
             backgroundColor: Colors.black,
-            timeInSecForIos: 1,
+            // timeInSecForIos: 1,
             textColor: Colors.white,
             fontSize: 15,
           );

@@ -44,19 +44,19 @@ class _MyTabState extends State<MyTab>{
           items: [
         BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('首页')
+            label: '首页'
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.message),
-            title: Text('消息')
+            label: '消息'
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.departure_board),
-            title: Text('发现')
+            label: '发现'
         ),
         BottomNavigationBarItem(
             icon: Icon(Icons.people),
-            title: Text('我的')
+            label: '我的'
         ),
 //        BottomNavigationBarItem(
 //            icon: Image.asset('/images/bg.png'),

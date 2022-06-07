@@ -66,7 +66,7 @@ class _MyNetWorkPageState extends State<MyNetWorkPage>{
   _getData() async {
     print('http_getData');
     String url = 'http://a.itying.com/api/productlist';
-    http.Response respone = await http.get(url);//异步请求
+    http.Response respone = await http.get(Uri.parse(url));//异步请求
     print('http_code= ${respone.statusCode}');
     if (respone.statusCode == 200) {
       print('http_body= ${respone.body}');
@@ -80,7 +80,7 @@ class _MyNetWorkPageState extends State<MyNetWorkPage>{
   _postData() async {
     print('http_getData');
     String url = 'https://suggest.taobao.com/sug?code=utf-8&q=%E5%8D%AB%E8%A1%A3';
-    http.Response respone = await http.post(url,body:this._map);//异步请求
+    http.Response respone = await http.post(Uri.parse(url),body:this._map);//异步请求
     print('http_code= ${respone.statusCode}');
     if (respone.statusCode == 200) {
       print('http_body= ${respone.body}');
